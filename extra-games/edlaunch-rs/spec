@@ -1,0 +1,3 @@
+VER=0.4.7
+SRCTBL="https://gitlab.com/liushuyu/edlaunch-rs/-/archive/v${VER}/edlaunch-rs-v${VER}.tar.gz"
+CHKSUM="sha256::00e00f9496e685b031b8c08b6d3850feb5683ef31d1c15e6333420f63ce7a302"
