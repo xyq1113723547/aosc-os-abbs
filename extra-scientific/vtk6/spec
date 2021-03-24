@@ -1,0 +1,3 @@
+VER=6.3.0
+GITSRC="https://github.com/Kitware/VTK"
+GITCO="21df122f4186aec9baae298bfc35b5a380869748"

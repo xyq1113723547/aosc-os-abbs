@@ -1,0 +1,7 @@
+PKGNAME=vtk6
+PKGSEC=science
+PKGDES="Visualization Toolkit"
+PKGDEP="ffmpeg freetype expat r sqlite tcl libtiff tk proj qt-5 x11-lib libtheora zlib openmpi gdal hdf5 utfcpp mpich netcdf netcdf-cxx-legacy"
+
+USECLANG=1
+USECLANG__LOONGSON3=0
