@@ -1,4 +1,3 @@
-VER=3.20.2
-REL=1
+VER=3.22.0
 SRCS="https://github.com/IsoaSFlus/QLivePlayer/archive/${VER}.tar.gz"
-CHKSUMS="sha256::9859e3da8e4d194d153d2a3725f9f34fea527f67866867fb48299a43bf9c9e84"
+CHKSUMS="sha256::ce5ea750a7ad66c7cf61a71aceb5a2e10a1c89fccf7e381cb505b1f3198be6ea"
