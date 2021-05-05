@@ -1,6 +1,6 @@
 PKGNAME=mlt
 PKGSEC=video
-PKGDEP="libdv sdl-image libsamplerate sox ffmpeg vid.stab qt-5 libexif python-2"
+PKGDEP="libdv sdl-image sdl2 libsamplerate sox ffmpeg vid.stab qt-5 libexif python-2 frei0r-plugins rubberband"
 BUILDDEP="ladspa-sdk jack swig gtk-2"
 PKGDES="An open source multimedia framework"
 
