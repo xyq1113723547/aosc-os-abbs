@@ -1,0 +1,7 @@
+PKGNAME=wtftw
+PKGSEC=x11
+PKGDEP="x11-app x11-lib"
+BUILDDEP="rustc llvm"
+PKGDES="A tiling window manager written in Rust"
+
+USECLANG=1
