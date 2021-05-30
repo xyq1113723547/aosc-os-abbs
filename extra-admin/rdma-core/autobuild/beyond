@@ -1,0 +1,7 @@
+pushd ${SRCDIR}/redhat
+	install -D --mode=0644 rdma.conf "${PKGDIR}/etc/rdma/rdma.conf"
+	install -D --mode=0755 rdma.mlx4-setup.sh "${PKGDIR}/usr/lib/rdma/mlx4-setup.sh"
+	install -D --mode=0644 rdma.mlx4.conf "${PKGDIR}/etc/rdma/mlx4.conf"
+	install -D --mode=0644 rdma.mlx4.sys.modprobe "${PKGDIR}/usr/lib/modprobe.d/libmlx4.conf"
+	install -D --mode=0755 rdma.modules-setup.sh "${PKGDIR}/usr/lib/dracut/modules.d/05rdma/module-setup.sh"
+popd
