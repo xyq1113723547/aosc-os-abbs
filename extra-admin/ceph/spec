@@ -1,4 +1,3 @@
-VER=15.2.8
+VER=16.2.4
 SRCS="https://download.ceph.com/tarballs/ceph-$VER.tar.gz"
-CHKSUMS="sha256::64c5eaf8c1e4092e59bc538e9241b6d5cf4ffca92563031abbea8b37b4cab9da"
-
+CHKSUMS="sha256::27a1552bb7de34df1c18ee4148395f446002033721991512591f9ae1981e5b2d"

@@ -2,7 +2,7 @@ PKGNAME=ceph
 PKGSEC=admin
 PKGDEP="babeltrace boost cherrytree crypto++ curl cython expat fuse \
         gperftools gptfdisk inetutils jinja2 keyutils leveldb libaio \
-        lttng-ust lz4 ncurses nss parted pcre prettytable pyopenssl \
+        lttng-ust lua-5.3 lz4 ncurses nss parted pcre prettytable pyopenssl \
         procps setuptools snappy socat util-linux werkzeug xfsprogs zstd"
 BUILDDEP="bc cpio gperf jq valgrind virtualenv sphinx cunit oath-toolkit nodejs"
 PKGDES="A distributed object store and file system"
@@ -21,7 +21,7 @@ CMAKE_AFTER="-DCMAKE_INSTALL_SBINDIR=/usr/bin \
              -DWITH_MGR=ON \
              -DWITH_NSS=ON \
              -DWITH_PYTHON2=OFF \
-             -DWITH_PYTHON3=ON \
+             -DWITH_PYTHON3=${ABPY3VER} \
              -DMGR_PYTHON_VERSION=3 \
              -DPYTHON_INCLUDE_DIR=/usr/include/python${ABPY3VER} \
              -DWITH_RADOSGW=ON \
