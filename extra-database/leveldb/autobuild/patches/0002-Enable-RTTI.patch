@@ -1,0 +1,41 @@
+From 483cb3d652fd4d9e1c8465091724ae406603d857 Mon Sep 17 00:00:00 2001
+From: Kay Lin <i@v2bv.net>
+Date: Sun, 20 Jun 2021 22:04:11 -0700
+Subject: [PATCH 2/2] Enable RTTI
+
+Disabling RTTI will break Ceph.
+
+Now you can build Ceph, but at what cost?
+
+Signed-off-by: Kay Lin <i@v2bv.net>
+---
+ CMakeLists.txt | 8 --------
+ 1 file changed, 8 deletions(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index e0c7c9e..70d25bc 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -57,19 +57,11 @@ if(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+   string(REGEX REPLACE "/EH[a-z]+" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+   set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /EHs-c-")
+   add_definitions(-D_HAS_EXCEPTIONS=0)
+-
+-  # Disable RTTI.
+-  string(REGEX REPLACE "/GR" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /GR-")
+ else(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+   # Enable strict prototype warnings for C code in clang and gcc.
+   if(NOT CMAKE_C_FLAGS MATCHES "-Wstrict-prototypes")
+     set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -Wstrict-prototypes")
+   endif(NOT CMAKE_C_FLAGS MATCHES "-Wstrict-prototypes")
+-
+-  # Disable RTTI.
+-  string(REGEX REPLACE "-frtti" "" CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS}")
+-  set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -fno-rtti")
+ endif(CMAKE_CXX_COMPILER_ID STREQUAL "MSVC")
+ 
+ # Test whether -Wthread-safety is available. See
+-- 
+2.30.2
+
