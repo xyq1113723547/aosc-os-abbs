@@ -1,0 +1,3 @@
+VER=3.3.24
+SRCTBL="https://github.com/linux-rdma/opensm/releases/download/${VER}/opensm-${VER}.tar.gz"
+CHKSUM="sha256::a3335e371a4b044427574dff9d324c6c334e502e8facdf58bc070ee151d7e460"
