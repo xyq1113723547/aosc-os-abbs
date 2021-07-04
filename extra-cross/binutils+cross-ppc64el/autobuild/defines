@@ -1,0 +1,6 @@
+PKGNAME=binutils+cross-ppc64el
+PKGDEP="glibc"
+PKGSEC=devel
+PKGDES="Binutils for ppc64el cross build"
+
+FAIL_ARCH="ppc64el"
