@@ -1,0 +1,4 @@
+if [ ! -d /var/ab/cross-root/loongson3 ]; then
+	mkdir -p /var/ab/cross-root/loongson3
+	wget https://releases.aosc.io/os-loongson3/container/aosc-os_container_20210604_loongson3.tar.xz -O - | ( tar xfpJ - -C /var/ab/cross-root/loongson3/ || true )
+fi
