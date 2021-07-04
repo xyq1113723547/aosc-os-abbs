@@ -1,0 +1,4 @@
+if [ ! -d /var/ab/cross-root/ppc64el ]; then
+	mkdir -p /var/ab/cross-root/ppc64el
+	wget https://releases.aosc.io/os-ppc64el/container/aosc-os_container_20210602_ppc64el.tar.xz -O - | ( tar xfpJ - -C /var/ab/cross-root/ppc64el/ || true )
+fi

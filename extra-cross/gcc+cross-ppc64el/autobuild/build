@@ -1,0 +1,18 @@
+unset CFLAGS CXXFLAGS LDFLAGS CPPFLAGS
+
+mkdir -p build
+cd build
+export PATH="/opt/abcross/ppc64el/bin:$PATH"
+AR=ar ../configure --prefix=/opt/abcross/ppc64el --target=powerpc64le-aosc-linux-gnu \
+                   --with-sysroot=/var/ab/cross-root/ppc64el --enable-shared --disable-multilib \
+                   --enable-c99 --enable-long-long --enable-threads=posix \
+                   --enable-languages=c,c++,fortran,lto,go,ada --enable-__cxa_atexit --enable-lto --enable-gnu-unique-object \
+                   --enable-linker-build-id --enable-libstdcxx-dual-abi --with-default-libstdcxx-abi=new \
+                   --with-cpu=power8 --with-tune=power9 \
+                   --with-long-double-128 --enable-secureplt \
+                   --enable-targets=powerpcle-linux \
+                   --with-libphobos-druntime-only=no
+
+make AS_FOR_TARGET=/opt/abcross/ppc64el/bin/powerpc64le-aosc-linux-gnu-as \
+     LD_FOR_TARGET=/opt/abcross/ppc64el/bin/powerpc64le-aosc-linux-gnu-ld
+make DESTDIR=$PKGDIR install
