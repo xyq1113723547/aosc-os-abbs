@@ -1,0 +1,4 @@
+if [ ! -d /var/ab/cross-root/arm64 ]; then
+	mkdir -p /var/ab/cross-root/arm64
+	wget https://releases.aosc.io/os-arm64/container/aosc-os_container_20210602_arm64.tar.xz -O - | ( tar xfpJ - -C /var/ab/cross-root/arm64/ || true )
+fi
