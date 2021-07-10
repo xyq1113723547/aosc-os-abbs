@@ -2,7 +2,7 @@ PKGNAME=remmina
 PKGSEC=net
 PKGDEP="gtk-3 zlib libjpeg-turbo libssh libunique avahi vte-gtk3 libgcrypt \
 	freerdp telepathy-glib libvncserver libappindicator webkit2gtk \
-	libsodium libspice-gtk "
+	libsodium libspice-gtk gtk-vnc libsoup openssl pango"
 BUILDDEP="gnome-keyring kwallet"
 PKGSUG="gnome-keyring kwallet"
 PKGDES="A remote desktop client written in GTK+"
@@ -11,4 +11,6 @@ CMAKE_AFTER="
 	-DWITH_NEWS=OFF
 	-DWITH_APPINDICATOR=ON
 	-DWITH_KF5WALLET=ON
+	-DWITH_PYTHONLIBS=ON
+	-DWITH_GVNC=ON
 "

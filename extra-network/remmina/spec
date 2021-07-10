@@ -1,3 +1,3 @@
-VER=1.4.11
+VER=1.4.20
 SRCS="tbl::https://gitlab.com/Remmina/Remmina/-/archive/v${VER}/Remmina-v{VER}.tar.gz"
-CHKSUMS="sha256::3991bb41ccc73e4183f8b786048fcbfcaf8b825d82f6fd168886a0151a781b76"
+CHKSUMS="sha256::ef6eb6d8ca82a87bb8212f2a4f35df52bcfc4aed62ffd792d233a51f62c69cd4"
