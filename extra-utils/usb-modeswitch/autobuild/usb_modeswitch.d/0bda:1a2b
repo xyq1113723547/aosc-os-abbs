@@ -1,0 +1,4 @@
+# Realtek WLAN NICs with internal driver storage
+TargetVendor=0x0bda
+TargetProduct=0x1a2b
+StandardEject=1

@@ -11,9 +11,13 @@ make \
     SBINDIR="$PKGDIR"/usr/bin \
     install
 
+abinfo "Rebuilding udev rules of usb-modeswitch-data ..."
+rm "$SRCDIR"/usb-modeswitch-data-*/40-usb_modeswitch.rules
+make -C "$SRCDIR"/usb-modeswitch-data-*/
+
 abinfo "Installing usb-modeswitch-data ..."
 make \
-    -C "$SRCDIR"/usb-modeswitch-data-20170120 \
+    -C "$SRCDIR"/usb-modeswitch-data-*/ \
     DESTDIR="$PKGDIR" \
     RULESDIR="$PKGDIR"/usr/lib/udev/rules.d \
     install
