@@ -1,5 +1,4 @@
-VER=1.20.5
-REL=1
+VER=1.20.9
 SRCS="tbl::http://ftp.debian.org/debian/pool/main/d/dpkg/dpkg_$VER.tar.xz"
-CHKSUMS="sha256::f2f23f3197957d89e54b87cf8fc42ab00e1b74f3a32090efe9acd08443f3e0dd"
+CHKSUMS="sha256::5ce242830f213b5620f08e6c4183adb1ef4dc9da28d31988a27c87c71fe534ce"
 CHKUPDATE="anitya::id=8127"
