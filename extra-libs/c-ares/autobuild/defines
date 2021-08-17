@@ -4,3 +4,5 @@ PKGDEP="glibc"
 PKGSEC=libs
 
 AUTOTOOLS_AFTER="--enable-shared"
+
+ABSPLITDBG=0
