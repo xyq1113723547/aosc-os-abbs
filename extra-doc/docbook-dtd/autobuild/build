@@ -62,8 +62,6 @@ for i in ${SGML_VERSIONS[@]}; do
     cp -v *.dcl "$TARGETDIR"
     cp -v *.dtd *.mod "$TARGETDIR"
     cp -v docbook.cat "$TARGETDIR/catalog/"
-    # register schemas
-    register_schema "$i" "sgml"
     cd ..
 done
 for i in ${_COMMON_VERSIONS[@]}; do
