@@ -1,0 +1,8 @@
+PKGNAME=wsjtx
+PKGSEC=hamradio
+PKGDES="Software for Amateur Radio Weak-Signal Communication (JT9 and JT65)"
+PKGDEP="fftw libpng pulseaudio libusb libusb-compat qt-5 gcc-runtime"
+BUILDDEP="asciidoc asciidoctor boost"
+
+CMAKE_AFTER="-DCMAKE_INSTALL_PREFIX=/usr \
+             -DCMAKE_BUILD_TYPE=Release"

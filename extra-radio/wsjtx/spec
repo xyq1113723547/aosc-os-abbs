@@ -1,0 +1,4 @@
+VER=2.4.0
+SRCS="tbl::https://www.physics.princeton.edu/pulsar/k1jt/wsjtx-2.4.0.tgz"
+CHKSUMS="sha256::2e97c6cc8fc7a6ca7bfcad1966ed8415596f59c374727010d51340c4232e81c8"
+CHKUPDATE="anitya::id=16118"
