@@ -22,3 +22,4 @@ AUTOTOOLS_AFTER="--with-logdir=/var/log/cups \
 ABSHADOW=0
 USECLANG=0
 RECONF=0
+ABSPLITDBG=0
