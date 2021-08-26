@@ -5,3 +5,5 @@ PKGDES="A macro processor"
 PKGSEC=utils
 
 RECONF=0
+
+NOLTO__LOONGARCH64=1

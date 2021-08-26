@@ -1,0 +1,1 @@
+chmod -v +x $PKGDIR/usr/lib/libproxy.so.1.0.0

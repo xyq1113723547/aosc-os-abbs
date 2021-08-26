@@ -1,7 +1,7 @@
 PKGNAME=gtk-3
 PKGSEC=x11
-PKGDEP="adwaita-icon-theme at-spi2-atk cairo colord x11-lib pango libepoxy shared-mime-info \
-        wayland libxkbcommon rest gobject-introspection gdk-pixbuf wayland-protocols"
+PKGDEP="adwaita-icon-theme at-spi2-atk cairo x11-lib libxkbcommon pango libepoxy shared-mime-info \
+        libxkbcommon gobject-introspection gdk-pixbuf "
 BUILDDEP="gtk-doc vim"
 PKGDES="GIMP toolkit version 3"
 

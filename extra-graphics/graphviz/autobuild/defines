@@ -2,8 +2,8 @@ PKGNAME=graphviz
 PKGSEC=graphics
 PKGDES="Graph visualization software"
 
-PKGDEP="libgd libtool librsvg x11-lib ghostscript pango gts libnsl2"
-BUILDDEP="gtk-2 guile lua perl python-2 ruby tcl xterm swig tk mono php qt-4 r"
+PKGDEP="libgd libtool x11-lib ghostscript pango gts libnsl2"
+BUILDDEP="gtk-2 perl python-2 ruby tcl swig tk "
 BUILDDEP__LOONGSON3="gtk-2 guile lua perl python-2 ruby tcl xterm swig tk php qt-4 r"
 ABSHADOW=0
 

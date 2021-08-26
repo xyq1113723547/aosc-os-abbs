@@ -17,4 +17,4 @@ abinfo "Sourcing more architecture-dependent flags ..."
 source "$AB"/arch/${CROSS:-$ARCH}.sh
 
 abinfo 'GCC only passes CPPFLAGS in some stages, appending other flags to $CPPFLAGS ...'
-export CPPFLAGS="${CPPFLAGS} -O3 ${CFLAGS_COMMON_ARCH}"
+export CPPFLAGS="${CPPFLAGS} -O2 ${CFLAGS_COMMON_ARCH}"

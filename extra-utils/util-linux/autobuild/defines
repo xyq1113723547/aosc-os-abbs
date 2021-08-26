@@ -2,11 +2,12 @@ PKGNAME=util-linux
 PKGSEC=utils
 PKGDES="Utilities and management tools for Linux"
 PKGDEP="coreutils linux-pam python-3 systemd"
-PKGDEP__RETRO="coreutils linux-pam systemd"
+PKGDEP__RETRO="coreutils linux-pam "
 PKGDEP__ARMEL="${PKGDEP__RETRO}"
 PKGDEP__ARMHF="${PKGDEP__RETRO}"
 PKGDEP__I486="${PKGDEP__RETRO}"
 PKGDEP__LOONGSON2F="${PKGDEP__RETRO}"
+PKGDEP__LOONGARCH64="${PKGDEP__RETRO}"
 PKGDEP__POWERPC="${PKGDEP__RETRO}"
 PKGDEP__PPC64="${PKGDEP__RETRO}"
 

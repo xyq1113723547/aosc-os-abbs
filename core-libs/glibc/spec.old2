@@ -1,0 +1,6 @@
+VER=2.32+git20210414
+VER__LOONGARCH64=2.28
+SRCS="git::commit=1799ac8eabe87acd7b1ef7c3a483171489563482::https://sourceware.org/git/glibc.git"
+SRCS__LOONGARCH64="git::commit=08af3467d8a66bed25c7a9487759e3e3d2507ccf::https://github.com/loongson/glibc.git"
+CHKSUMS="SKIP"
+CHKSUMS__LOONGARCH64="SKIP"

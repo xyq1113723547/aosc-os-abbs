@@ -6,3 +6,6 @@ make
 
 abinfo "Installing C components ..."
 make install DESTDIR="$PKGDIR"
+
+abinfo " chmod +x with libraries ..."
+chmod -v +x $PKGDIR/usr/lib/libbrotli*.so.*

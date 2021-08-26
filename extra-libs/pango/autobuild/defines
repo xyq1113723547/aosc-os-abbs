@@ -17,7 +17,7 @@ AUTOTOOLS_AFTER="--with-included-modules=basic-fc \
                  --enable-doc-cross-references"
 MESON_AFTER__RETRO=" \
                  -Dgtk_doc=false \
-                 -Dintrospection=false"
+                 -Dintrospection=disabled"
 MESON_AFTER__ARMEL="${MESON_AFTER__RETRO}"
 MESON_AFTER__ARMHF="${MESON_AFTER__RETRO}"
 MESON_AFTER__I486="${MESON_AFTER__RETRO}"

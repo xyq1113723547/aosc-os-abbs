@@ -1,4 +1,6 @@
 ./configure --prefix=/usr --sysconfdir=/etc \
+            --libdir=/usr/lib \
+            --enable-lib-static \
             --extra-cflags="${CPPFLAGS} ${CFLAGS}" --extra-ldflags="${LDFLAGS}"
 make
 make install DESTDIR="$PKGDIR"

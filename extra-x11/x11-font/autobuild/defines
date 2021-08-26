@@ -2,4 +2,4 @@ PKGNAME=x11-font
 PKGSEC=x11
 PKGDES="X11R7 Fonts and Utilities"
 PKGDEP="x11-app"
-BUILDDEP="x11-font"
+#BUILDDEP="x11-font"

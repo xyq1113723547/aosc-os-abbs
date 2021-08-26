@@ -1,7 +1,7 @@
 PKGNAME=postgresql
 PKGSEC=database
-PKGDEP="krb5 libxml2 linux-pam openssl python-3 readline tcl util-linux llvm-runtime libxslt"
-BUILDDEP="docbook2x python-2 perl tcl llvm"
+PKGDEP="krb5 libxml2 linux-pam openssl python-3 readline tcl util-linux libxslt"
+BUILDDEP="docbook2x python-2 perl tcl "
 PKGDES="A sophisticated object-relational DBMS"
 
 AUTOTOOLS_AFTER="--datadir=/usr/share/postgresql \
@@ -11,10 +11,8 @@ AUTOTOOLS_AFTER="--datadir=/usr/share/postgresql \
                  --with-perl \
                  --with-python \
                  --with-tcl \
-                 --with-llvm \
                  --with-pam \
                  --with-libxslt \
-                 --with-icu \
                  --with-system-tzdata=/usr/share/zoneinfo \
                  --with-uuid=e2fs \
                  --enable-nls \
@@ -24,6 +22,9 @@ AUTOTOOLS_AFTER__RISCV64=" \
                  ${AUTOTOOLS_AFTER} \
                  --disable-spinlocks"
 
+AUTOTOOLS_AFTER__LOONGARCH64=" \
+                 ${AUTOTOOLS_AFTER} \
+                 --disable-spinlocks"
 ABMK="world"
 ABSHADOW=0
 RECONF=0

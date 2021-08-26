@@ -15,8 +15,6 @@ for lib in ${RTLIBS[@]}; do
     fi
 done
 
-abinfo "Installing libobjc ..."
-make -C "${ARCH_TARGET[$ARCH]}"/libobjc DESTDIR="$PKGDIR" install-libs
 abinfo "Installing libstdc++-v3 ..."
 make -C "${ARCH_TARGET[$ARCH]}"/libstdc++-v3/po DESTDIR="$PKGDIR" install
 

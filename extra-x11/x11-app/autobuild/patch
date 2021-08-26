@@ -41,6 +41,6 @@ EOF
 [ ! -e /usr/lib/libGL.so ] && sed -i '/xdriinfo/d' app-7.7.md5
 for i in $(grep -v '^#' app-7.7.md5 | awk '{print $2}')
 do
-	wget http://xorg.freedesktop.org/releases/individual/app/$i || break
+	wget https://mirrors.ustc.edu.cn/Xorg/pub/individual/app/$i || break
 done &&
 md5sum -c app-7.7.md5 || exit 1

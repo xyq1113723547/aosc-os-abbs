@@ -21,7 +21,10 @@ elif [[ "${CROSS:-$ARCH}" = "ppc64el" ]]; then
     ARCH_OPTS="linux-ppc64le"
 elif [[ "${CROSS:-$ARCH}" = "riscv64" ]]; then
     ARCH_OPTS="linux-generic64"
+elif [[ "${CROSS:-$ARCH}" = "loongarch64" ]]; then
+    ARCH_OPTS="linux-generic64"
 fi
+
 
 # Use on little endian platforms when GCC supports uint128_t.
 # ECDH is about 2 to 4 times faster. Not enabled by default

@@ -1,0 +1,3 @@
+abinfo " idnkit.so chanage execution ... "
+chmod -v +x "$PKGDIR"/usr/lib/libidnkitlite.so
+chmod -v +x "$PKGDIR"/usr/lib/libidnkit.so

@@ -9,6 +9,7 @@
 # 6. Enables C++ bindings (disable --with-cxx-binding if you are sure);
 # 7. Enables C++ shared bindings (remove if #6 is not needed);
 abinfo "Configuring..."
+AUTOTOOLS_AFTER="--disable-stripping"
 ./configure --prefix=/usr --libdir=/usr/lib \
             --with-pkg-config-libdir=/usr/lib/pkgconfig \
             --mandir=/usr/share/man \

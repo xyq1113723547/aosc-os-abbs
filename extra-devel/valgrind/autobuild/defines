@@ -4,6 +4,7 @@ PKGDEP="perl openmpi"
 PKGDEP__POWERPC="${PKGDEP/openmpi/}"
 PKGDEP__PPC64="${PKGDEP/openmpi/}"
 PKGDEP__RISCV64="${PKGDEP/openmpi/}"
+PKGDEP__LOONGARCH64="${PKGDEP/openmpi/}"
 PKGDES="A tool to help find memory management problems in programs"
 
 # Filter out some flags that cause lots of valgrind test failures.

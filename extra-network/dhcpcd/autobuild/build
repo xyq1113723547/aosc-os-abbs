@@ -1,5 +1,5 @@
 abinfo "Configuring..."
-./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/libexec --rundir=/run --dbdir=/var/lib/dhcpcd
+./configure --prefix=/usr --sysconfdir=/etc --localstatedir=/var --libexecdir=/usr/libexec --rundir=/run --dbdir=/var/lib/dhcpcd --sbindir=/usr/bin
 abinfo "Making..."
 make
 abinfo "Installing..."

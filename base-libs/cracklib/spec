@@ -1,4 +1,4 @@
 VER=2.9.7
-SRCS="tbl::https://github.com/cracklib/cracklib/releases/download/v$VER/cracklib-$VER.tar.bz2"
-CHKSUMS="sha256::fe82098509e4d60377b998662facf058dc405864a8947956718857dbb4bc35e6"
+SRCS="tbl::http://0.0.0.0:8000/cracklib-$VER.tar.xz"
+CHKSUMS="sha256::d0fc4ef466d0050f46b0ccd2f73373c60c47454da55f6fb2fd04b0701c73c134"
 REL=1

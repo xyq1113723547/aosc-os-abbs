@@ -1,0 +1,16 @@
+# XZ compile script adapt from Arch Linux
+
+abinfo "copy new config.guess and config.sub"
+cp /sources/config.* ./build-aux/
+
+abinfo "configure xz ..."
+./configure --prefix=/usr \
+	--disable-rpath \
+	--enable-werror
+
+abinfo "building xz ..."
+make
+
+abinfo "temp installing xz ..."
+	make DESTDIR="${PKGDIR}" install
+	install -d -m755 "${PKGDIR}/usr/share/licenses/xz/"

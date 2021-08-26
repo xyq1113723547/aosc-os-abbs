@@ -55,7 +55,7 @@ AUTOTOOLS_AFTER="--prefix=/usr \
                  --enable-gnu-unique-object --enable-linker-build-id \
                  --with-isl=/usr \
                  --enable-lto --enable-plugin --enable-install-libiberty \
-                 --disable-multilib --disable-werror \
+                 --disable-werror \
                  --enable-pie \
                  --enable-checking=release \
                  --enable-libstdcxx-dual-abi --with-default-libstdcxx-abi=new \
@@ -96,11 +96,14 @@ AUTOTOOLS_AFTER__PPC64EL="$AUTOTOOLS_AFTER $AUTOTOOLS_AFTER__GO \
                         --enable-targets=powerpcle-linux"
 AUTOTOOLS_AFTER__RISCV64="$AUTOTOOLS_AFTER $AUTOTOOLS_AFTER__NOGO \
                         --without-libffi"
+AUTOTOOLS_AFTER__LOONGARCH64="$AUTOTOOLS_AFTER --with-abi=lp64 --with-arch=loongarch64 --enable-tls \
+             		--disable-libada \
+             		--enable-languages=c,c++,objc,obj-c++,lto"
 
-ABMK="profiledbootstrap"
 ABMK__LOONGSON3="bootstrap"
 AB_FLAGS_SPECS=0
 AB_FLAGS_O3=1
+AB_FLAGS_O3__LOONGARCH64=0
 
 AB_FLAGS_O3__ARMEL=0
 AB_FLAGS_O3__ARMHF=0
@@ -119,5 +122,3 @@ NOLTO=1
 
 RECONF=0
 
-PKGBREAK="gcc<=9.3.1-1"
-PKGREP="gcc<=9.3.1-1"

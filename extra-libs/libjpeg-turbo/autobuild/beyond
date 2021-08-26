@@ -1,3 +1,5 @@
 abinfo "Installing jpegint.h ..."
 install -vm644 "$SRCDIR"/jpegint.h \
     "$PKGDIR"/usr/include
+abinfo "change so to be executable ..."
+chmod -v +x "$PKGDIR"/usr/lib/libturbojpeg.so.0.2.0 "$PKGDIR"/usr/lib/libjpeg.so.8.2.2

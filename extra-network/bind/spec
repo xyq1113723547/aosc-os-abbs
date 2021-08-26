@@ -2,4 +2,4 @@ VER=9.16.12
 SRCS="tbl::https://ftp.isc.org/isc/bind${VER:0:1}/${VER/.P/-P}/bind-${VER/.P/-P}.tar.xz \
       file::rename=root.hint::https://www.internic.net/zones/named.root"
 CHKSUMS="sha256::9914af9311fd349cab441097898d94fb28d0bfd9bf6ed04fe1f97f042644da7f \
-         sha256::cc56780553678b1b545b5722564e9c47063edab15b28a5033b36b0a36be64c05"
+         sha256::0299cd76f68dd56d023dcdfb26d1b53bc483d1e7b43f960a0d0a665fd55741da"

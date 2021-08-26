@@ -1,0 +1,2 @@
+abinfo "change execution bit for so"
+chmod -v +x $PKGDIR/usr/lib/libssh.so.4.7.6

@@ -1,6 +1,6 @@
 mkdir cracklib-dicts/
 cd cracklib-dicts/
-wget https://github.com/cracklib/cracklib/releases/download/v$PKGVER/cracklib-words-$PKGVER.gz
+wget http://0.0.0.0:8000/cracklib-words-$PKGVER.bz2
 cd ..
 
 chmod +x util/cracklib-format

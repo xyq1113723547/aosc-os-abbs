@@ -1,7 +1,7 @@
 PKGNAME=avahi
 PKGSEC=net
 PKGDES="Service Discovery for Linux using mDNS/DNS-SD"
-PKGDEP="dbus-python expat libcap libdaemon nss-mdns twisted"
+PKGDEP="dbus-python expat libcap libdaemon nss-mdns "
 PKGSUG="gtk-3 pygobject-3"
 BUILDDEP="gobject-introspection intltool xmltoman pygobject-3 gtk-3"
 

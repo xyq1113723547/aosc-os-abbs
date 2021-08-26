@@ -1,2 +1,3 @@
 abinfo "Dropping bundled sources ..."
 rm -rv "$SRCDIR"/subprojects
+sed '/--help-option=/d' -i $SRCDIR/meson.build

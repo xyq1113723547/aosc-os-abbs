@@ -1,4 +1,5 @@
 VER=3.2.1
 REL=11
 SRCS="tbl::https://sourceware.org/pub/libffi/libffi-$VER.tar.gz"
+SRCS__LOONGARCH64="git::commit=57455d2ea03a982b58f65e966890259bd41add2c::https://github.com/xyq1113723547/libffi.git"
 CHKSUMS="sha256::d06ebb8e1d9a22d19e38d63fdb83954253f39bedc5d46232a05645685722ca37"

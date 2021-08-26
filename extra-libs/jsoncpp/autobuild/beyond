@@ -1,2 +1,3 @@
 # CMake seems to assume static library soname.
 ln -sv libjsoncpp_static.a "$PKGDIR"/usr/lib/libjsoncpp.a
+chmod -v +x "$PKGDIR"/usr/lib/libjsoncpp.so.1.8.4

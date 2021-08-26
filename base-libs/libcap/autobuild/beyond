@@ -1,0 +1,2 @@
+abinfo " set libcap"
+chmod -v +x "$PKGDIR"/usr/lib/libcap.so.2.43

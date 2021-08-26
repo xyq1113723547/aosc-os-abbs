@@ -1,11 +1,11 @@
 abinfo "Installing systemd unit ..."
-install -Dvm644 "$SRCDIR"/build/contrib/nghttpx.service \
-    "$PKGDIR"/usr/lib/systemd/system/nghttpx.service
+#install -Dvm644 "$SRCDIR"/build/contrib/nghttpx.service \
+#    "$PKGDIR"/usr/lib/systemd/system/nghttpx.service
 
 abinfo "Installing nghttpx logrotate configuration ..."
-install -Dvm644 "$SRCDIR"/contrib/nghttpx-logrotate \
-    "$PKGDIR"/etc/logrotate.d/nghttpx
+#install -Dvm644 "$SRCDIR"/contrib/nghttpx-logrotate \
+#    "$PKGDIR"/etc/logrotate.d/nghttpx
 
 abinfo "Installing default configuration ..."
-install -Dvm644 "$SRCDIR"/nghttpx.conf.sample \
-    "$PKGDIR"/etc/nghttpx/nghttpx.conf
+#install -Dvm644 "$SRCDIR"/nghttpx.conf.sample \
+#    "$PKGDIR"/etc/nghttpx/nghttpx.conf

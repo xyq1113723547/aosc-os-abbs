@@ -42,6 +42,9 @@ AUTOTOOLS_AFTER="--libexecdir=/usr/lib \
                  --enable-bind-now \
                  --enable-stackguard-randomization \
                  --enable-stack-protector=strong"
+AUTOTOOLS_AFTER__LOONGARCH64=" \
+                 ${AUTOTOOLS_AFTER} \
+                 --with-tls"
 
 NOSTATIC=0
 

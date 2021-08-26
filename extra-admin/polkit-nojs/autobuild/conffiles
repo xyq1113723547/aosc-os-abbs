@@ -1,0 +1,2 @@
+/etc/polkit-1/localauthority.conf.d/50-localauthority.conf
+/etc/pam.d/polkit-1

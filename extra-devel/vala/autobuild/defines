@@ -1,6 +1,6 @@
 PKGNAME=vala
 PKGDES="Compiler for the Gobject type system"
-PKGDEP="gcc glib graphviz gtk-doc libgee pkg-config noto-fonts"
+PKGDEP="gcc glib graphviz gtk-doc pkg-config noto-fonts"
 BUILDDEP="help2man libxslt"
 PKGSEC=devel
 

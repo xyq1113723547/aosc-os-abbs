@@ -1,3 +1,5 @@
-VER=2.32+git20210414
+VER=2.28
 SRCS="git::commit=1799ac8eabe87acd7b1ef7c3a483171489563482::https://sourceware.org/git/glibc.git"
+SRCS__LOONGARCH64="tbl::https://repo.aosc.io/aosc-repacks/glibc-2.28.tar.xz"
 CHKSUMS="SKIP"
+CHKSUMS__LOONGARCH64="sha256::ff20cb9ada2e48835f9a2e08d0f86385968d6799e1f5f6a2e9320b8e90d1c639"

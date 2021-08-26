@@ -1,0 +1,8 @@
+abinfo "libsodium building ..."
+unset CFLAGS CXXFLAGS
+cp -v /sources/config.* ./build-aux/
+./configure --prefix=/usr
+make
+
+abinfo "install libsodium ..."
+make install DESTDIR="$PKGDIR"

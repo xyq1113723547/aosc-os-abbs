@@ -1,3 +1,4 @@
 install -Dm644 "$SRCDIR"/autobuild/snappy.pc \
     "$PKGDIR"/usr/lib/pkgconfig/snappy.pc
 sed -e "s|TEMPVER|$PKGVER|g" -i "$PKGDIR"/usr/lib/pkgconfig/snappy.pc
+chmod -v +x $PKGDIR/usr/lib/libsnappy.so.1.1.8

@@ -1,0 +1,11 @@
+abinfo "sed the doc"
+export CPPFLAGS="${CPPFLAGS} -DHAVE_SECCOMP=0"
+
+sed -e '/add_subdirectory(doc)/d' \
+    -e '/add_subdirectory(test)/d' \
+    -i "$SRCDIR"/CMakeLists.txt
+
+abinfo "build APT with cmake"
+cmake  -DCMAKE_INSTALL_PREFIX=${PKGDIR}/usr -DCMAKE_INSTALL_LIBDIR=${PKGDIR}/lib -DCMAKE_INSTALL_DIR=${PKGDIR}/lib -DWITH_DOC=OFF -DSECCOMP_FOUND=FALSE -DUSE_NLS=OFF .
+abinfo "install APT"
+DESDIR=${PKGDIR} make all install

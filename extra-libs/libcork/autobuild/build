@@ -1,0 +1,7 @@
+abinfo "Arch Linux and Gentoo build libcork ..."
+sed -i -e "s/-Werror/-Wextra/" -e "/docs\/old/d" CMakeLists.txt
+mkdir build
+cd build
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+make
+make install DESTDIR="$PKGDIR"

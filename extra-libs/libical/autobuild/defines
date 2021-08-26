@@ -1,7 +1,7 @@
 PKGNAME=libical
 PKGSEC=libs
 PKGDES="Implementation of the iCalendar protocols and data formats"
-PKGDEP="db glib icu"
+PKGDEP="db glib "
 BUILDDEP="gtk-doc gobject-introspection vala"
 
 NOPARALLEL=1

@@ -1,0 +1,3 @@
+abinfo "libipset change CMakeLists.txt"
+sed -e "s/-Werror/-Wextra/" -i "$SRCDIR"/CMakeLists.txt
+

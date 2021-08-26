@@ -1,4 +1,5 @@
 VER=2.5.1
 SRCS="https://github.com/seccomp/libseccomp/releases/download/v$VER/libseccomp-$VER.tar.gz"
 CHKSUMS="sha256::ee307e383c77aa7995abc5ada544d51c9723ae399768a97667d4cdb3c3a30d55"
+SRCS__LOONGARCH64="git::commit=becb6a738be75b7d2e0c62197a373f55f3067b89::https://github.com/loongarch64/libseccomp.git"
 REL=1

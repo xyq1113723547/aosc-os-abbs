@@ -2,9 +2,13 @@ abinfo 'Storing $SRCDIR value and unsetting $SRCDIR ...'
 export ABSRCDIR="$SRCDIR"
 unset SRCDIR
 
+abinfo "copy new config.* ..."
+cp /sources/config.* .
+
 abinfo "Configuring xfsprogs ..."
 ./configure \
     ${AUTOTOOLS_DEF} \
+    --libdir=/usr/lib
     ${AUTOTOOLS_AFTER}
 
 abinfo "Building xfsprogs ..."
@@ -17,7 +21,9 @@ make install install-dev \
 abinfo "Moving /lib => /usr/lib ..."
 if [ -d "$PKGDIR"/lib64 ]; then
     mv -v "$PKGDIR"/lib64/* "$PKGDIR"/usr/lib/
+    mv -v "$PKGDIR"/usr/lib64/* "$PKGDIR"/usr/lib/
     rmdir "$PKGDIR"/lib64
+    rmdir "$PKGDIR"/usr/lib64
 else
     mv -v "$PKGDIR"/lib/* "$PKGDIR"/usr/lib/
     rmdir "$PKGDIR"/lib

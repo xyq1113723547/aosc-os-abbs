@@ -26,6 +26,4 @@ install -dvm755 "$PKGDIR"/etc/ppp/peers
 if [[ "${CROSS:-$ARCH}" = *64 || \
       "${CROSS:-$ARCH}" = loongson* ]]; then
     abinfo "Moving /usr/lib64/* => /usr/lib ..."
-    mv -v "$PKGDIR"/usr/lib64/* "$PKGDIR"/usr/lib/
-    rm -rv "$PKGDIR"/usr/lib64
 fi

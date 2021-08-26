@@ -1,5 +1,6 @@
 abinfo "Building libcap ..."
-make GOLANG=no
+unset CXXFLAGS CFLAGS 
+make  GOLANG=no
 make prefix=/usr \
      lib=lib \
      GOLANG=no \

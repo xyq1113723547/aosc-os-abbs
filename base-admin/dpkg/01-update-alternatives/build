@@ -1,4 +1,5 @@
 abinfo "Building DPKG and installing to a fake rootfs ..."
+cp /sources/config* ./build-aux/
 ./configure \
     ${AUTOTOOLS_DEF/--enable-shared/} \
     ${AUTOTOOLS_AFTER}

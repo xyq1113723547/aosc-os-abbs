@@ -1,15 +1,14 @@
 PKGNAME=polkit
 PKGDES="Application development toolkit for controlling system-wide privileges"
 PKGSEC=admin
-PKGDEP="expat systemd glib linux-pam js-78"
-BUILDDEP="gobject-introspection gtk-doc autoconf-archive intltool libxslt"
+PKGDEP="expat glib linux-pam "
+BUILDDEP="autoconf-archive intltool libxslt"
 
 ABTYPE=meson
 MESON_AFTER="
 	-Db_lto=true
 	-Db_pie=true
-	-Dman=true
-	-Dgtk_doc=true
-	-Dos_type=redhat
+	-Dman=false
+	-Dgtk_doc=false
 	-Dsession_tracking=libsystemd-login
 "

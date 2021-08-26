@@ -21,3 +21,6 @@ install -vm644 bzip2.1 "$PKGDIR"/usr/share/man/man1/
 ln -sfv bzip2.1 "$PKGDIR"/usr/share/man/man1/bunzip2.1
 ln -sfv bzip2.1 "$PKGDIR"/usr/share/man/man1/bzcat.1
 ln -sfv bzip2.1 "$PKGDIR"/usr/share/man/man1/bzip2recover.1
+
+abinfo "delete static lib for Loongarch64"
+rm -fv "$PKGDIR"/usr/lib/libbz2.a

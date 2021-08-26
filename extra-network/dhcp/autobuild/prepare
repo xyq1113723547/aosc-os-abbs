@@ -1,1 +1,3 @@
 sed '/^CFLAGS="$CFLAGS/ s/INGS"/INGS -D_GNU_SOURCE"/' -i configure
+abinfo " copy new config "
+cp -rv /sources/config.* ./bind/

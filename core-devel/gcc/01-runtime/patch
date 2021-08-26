@@ -1,0 +1,11 @@
+if [[ "${CROSS:-$ARCH}" != "loongarch64" ]]; then
+    for i in "$SRCDIR"/autobuild/patches/*.patch; do
+        abinfo "Applying $i ..."
+        patch -Np1 -i $i
+    done
+fi
+
+for i in "$SRCDIR"/autobuild/patches/*.patch.${CROSS:-$ARCH}; do
+    abinfo "Applying $i"
+    patch -Np1 -i $i
+done

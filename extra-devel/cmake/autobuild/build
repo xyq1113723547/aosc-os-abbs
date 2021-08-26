@@ -20,7 +20,7 @@ cp -rv "$PKGDIR"/usr/share/cmake-${PKGVER%.*}/* \
 rm -rv "$PKGDIR"/usr/share/cmake-${PKGVER%.*}
 
 abinfo "Installing Emacs plugin ..."
-install -dv "$PKGDIR"/usr/share/emacs/site-lisp/
-emacs -batch \
-     -f batch-byte-compile \
-     "$PKGDIR"/usr/share//emacs/site-lisp/cmake-mode.el
+#install -dv "$PKGDIR"/usr/share/emacs/site-lisp/
+#emacs -batch \
+#     -f batch-byte-compile \
+#     "$PKGDIR"/usr/share//emacs/site-lisp/cmake-mode.el

@@ -3,6 +3,7 @@ PKGSEC=utils
 PKGDEP="gcc-runtime"
 BUILDDEP="ninja wxgtk3"
 BUILDDEP__AMD64="${BUILDDEP} yasm"
+BUILDDEP__LOONGARCH64="ninja"
 PKGSUG="wxgtk3"
 PKGDES="POSIX version of the 7zip compressed file archiver"
 

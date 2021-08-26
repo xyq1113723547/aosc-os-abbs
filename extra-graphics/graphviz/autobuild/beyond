@@ -1,0 +1,2 @@
+abinfo "move lib to /usr/lib"
+mv -v $PKGDIR/lib $PKGDIR/usr/lib

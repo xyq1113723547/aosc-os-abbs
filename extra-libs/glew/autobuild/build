@@ -1,3 +1,4 @@
+cp /sources/config.* ./config/
 make \
     STRIP= \
     LIBDIR=/usr/lib

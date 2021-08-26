@@ -17,3 +17,5 @@ mv -v "$PKGDIR"/usr/share/pam_user_map.so \
 
 abinfo "Setting executable bits for /usr/bin/* ..."
 chmod -v +x "$PKGDIR"/usr/bin/*
+chmod -v +x $PKGDIR/usr/lib/libmariadb.so.3
+chmod -v +x $PKGDIR/usr/lib/libmariadbd.so.19

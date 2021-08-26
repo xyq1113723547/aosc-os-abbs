@@ -8,6 +8,7 @@ PKGDEP__ARMEL="${PKGDEP__RETRO}"
 PKGDEP__ARMHF="${PKGDEP__RETRO}"
 PKGDEP__I486="${PKGDEP__RETRO}"
 PKGDEP__LOONGSON2F="${PKGDEP__RETRO}"
+PKGDEP__LOONGARCH64="${PKGDEP__RETRO}"
 PKGDEP__POWERPC="${PKGDEP__RETRO}"
 PKGDEP__PPC64="${PKGDEP__RETRO}"
 BUILDDEP="x11-proto mako systemd valgrind llvm libunwind glslang"
@@ -17,6 +18,7 @@ BUILDDEP__ARMEL="${BUILDDEP__RETRO}"
 BUILDDEP__ARMHF="${BUILDDEP__RETRO}"
 BUILDDEP__I486="${BUILDDEP__RETRO__OLDMESA}"
 BUILDDEP__LOONGSON2F="${BUILDDEP__RETRO}"
+BUILDDEP__LOONGARCH64="${BUILDDEP__RETRO}"
 BUILDDEP__POWERPC="${BUILDDEP__RETRO__OLDMESA}"
 BUILDDEP__PPC64="${BUILDDEP__RETRO__OLDMESA}"
 PKGSEC=libs
@@ -80,7 +82,6 @@ MESON_AFTER__LOONGSON3=" \
              ${MESON_AFTER__OTHER} \
              -Dlibunwind=enabled"
 
-
 MESON_AFTER__RETRO=" \
              -Ddri-drivers-path=/usr/lib/xorg/modules/dri \
              -Db_ndebug=true \
@@ -101,10 +102,6 @@ MESON_AFTER__RETRO=" \
              -Dglvnd=false \
              -Dglx=dri \
              -Dllvm=false \
-             -Dlmsensors=false \
-             -Dosmesa=none \
-             -Dshared-glapi=true \
-             -Dvalgrind=false \
              -Db_lto=false \
              -Dlibunwind=false"
 MESON_AFTER__I486=" \
@@ -127,6 +124,7 @@ MESON_AFTER__RETRO_OTHER=" \
 MESON_AFTER__ARMEL="${MESON_AFTER__RETRO_ARM}"
 MESON_AFTER__ARMHF="${MESON_AFTER__RETRO_ARM}"
 MESON_AFTER__LOONGSON2F="${MESON_AFTER__RETRO_OTHER}"
+MESON_AFTER__LOONGARCH64="${MESON_AFTER__RETRO_OTHER}"
 MESON_AFTER__POWERPC="${MESON_AFTER__RETRO_OTHER}"
 MESON_AFTER__PPC64="${MESON_AFTER__RETRO_OTHER}"
 

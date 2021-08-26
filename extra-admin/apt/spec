@@ -1,3 +1,3 @@
-VER=2.2.4
-SRCS="git::commit=tags/$VER::https://salsa.debian.org/apt-team/apt.git"
-CHKSUMS="SKIP"
+VER=2.3.8
+SRCS="http://mirrors.cloud.tencent.com/debian/pool/main/a/apt/apt_$VER.tar.xz"
+CHKSUMS="sha256::485af1430c75e3158b715e4424dbf96d1b5641dc4dccc50f571b2c779a837f2c"

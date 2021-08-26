@@ -1,0 +1,78 @@
+abinfo " create build directory and enter in"
+mkdir -p build
+cd build
+abinfo " unset CFLAGS and CXXFLAGS"
+unset CFLAGS CXXFLAGS
+abinfo " meson configure "
+meson --prefix=/usr --sbindir=/usr/bin -Dkmod=true \
+                    -Dxkbcommon=false \
+                    -Dblkid=true \
+                    -Dima=false \
+                    -Dselinux=false \
+                    -Dapparmor=false \
+                    -Dpolkit=true \
+                    -Dxz=false \
+                    -Dzlib=false \
+                    -Dbzip2=false \
+                    -Dlz4=false \
+                    -Dpam=true \
+                    -Dacl=true \
+                    -Dsmack=false \
+                    -Dgcrypt=false \
+                    -Daudit=false \
+                    -Delfutils=false \
+                    -Dlibcryptsetup=false \
+                    -Dqrencode=false \
+                    -Dgnutls=false \
+                    -Dmicrohttpd=false \
+                    -Dlibidn=false \
+                    -Dlibidn2=false \
+                    -Dlibiptc=false \
+                    -Dlibcurl=false \
+                    -Defi=false \
+                    -Dtpm=false \
+                    -Dhwdb=false \
+                    -Dsysusers=true \
+                    -Ddefault-kill-user-processes=false \
+                    -Dseccomp=false \
+                    -Dfallback-hostname=aosc \
+                    -Dnobody_user=systemd-nobody \
+                    -Dnobody_group=systemd-nogroup \
+                    -Dntp-servers=pool.ntp.org \
+                    -Db_lto=true \
+                    -Dpcre2=false \
+                    -Dsplit-usr=false \
+                    -Dsplit-bin=false \
+                    -Dbinfmt=false \
+                    -Dvconsole=false \
+                    -Dquotacheck=false \
+                    -Dfirstboot=false \
+                    -Drandomseed=false \
+                    -Dbacklight=true \
+                    -Drfkill=true \
+                    -Dmachined=true \
+                    -Dportabled=false \
+                    -Dhostnamed=true \
+                    -Dtimedated=true \
+                    -Dtimesyncd=true \
+                    -Dlocaled=true \
+                    -Dnetworkd=false \
+                    -Dresolve=false \
+                    -Dcoredump=false \
+                    -Didn=false \
+                    -Dutmp=false \
+                    -Dldconfig=false \
+                    -Dlogind=false \
+                    -Dnss-myhostname=false \
+                    -Dnss-systemd=false \
+                    -Dpstore=false \
+                    -Duserdb=false \
+                    -Dfdisk=false \
+                    -Dp11kit=false \
+                    -Drepart=false \
+                    -Ddns-over-tls=false \
+                    -Dopenssl=false
+abinfo "ninja build"
+ninja
+abinfo "ninja install"
+DESTDIR=$PKGDIR ninja install

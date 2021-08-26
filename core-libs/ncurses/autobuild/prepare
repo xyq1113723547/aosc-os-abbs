@@ -1,1 +1,3 @@
 NCURSES_SEMVER=$(echo ${PKGVER} | cut -d '+' -f 1)
+# Tweak configuration probing.
+cp /usr/share/automake-1.16/config.* "$SRCDIR"
