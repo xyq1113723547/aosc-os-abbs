@@ -6,5 +6,6 @@ SRCS="git::commit=tags/v$VER::https://github.com/archlinux/arch-install-scripts.
 CHKSUMS="SKIP \
          sha256::02a013e82e219cbf524141ccc516def1697b50c72138ab0bfb781095dffd91ea \
          sha256::41a3da4c7734fe8b325e38ab443f74996d6bb629f489014a5b1bf9dab9eb48f0"
+CHKUPDATE="anitya::id=14632"
 SUBDIR="arch-install-scripts"
 REL=1

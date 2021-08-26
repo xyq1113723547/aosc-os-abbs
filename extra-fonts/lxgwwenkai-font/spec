@@ -1,11 +1,17 @@
-VER=1.001
+VER=1.006
 SRCS="file::rename=LXGWWenKai-Bold.ttf::https://github.com/lxgw/LxgwWenKai/releases/download/v$VER/LXGWWenKai-Bold.ttf \
       file::rename=LXGWWenKai-Light.ttf::https://github.com/lxgw/LxgwWenKai/releases/download/v$VER/LXGWWenKai-Light.ttf \
       file::rename=LXGWWenKai-Regular.ttf::https://github.com/lxgw/LxgwWenKai/releases/download/v$VER/LXGWWenKai-Regular.ttf \
+      file::rename=LXGWWenKaiMono-Bold.ttf::https://github.com/lxgw/LxgwWenKai/releases/download/v$VER/LXGWWenKaiMono-Bold.ttf \
+      file::rename=LXGWWenKaiMono-Light.ttf::https://github.com/lxgw/LxgwWenKai/releases/download/v$VER/LXGWWenKaiMono-Light.ttf \
+      file::rename=LXGWWenKaiMono-Regular.ttf::https://github.com/lxgw/LxgwWenKai/releases/download/v1.005/LXGWWenKaiMono-Regular.ttf \
       tbl::https://github.com/lxgw/LxgwWenKai/archive/refs/tags/v$VER.tar.gz"
-CHKSUMS="sha256::aa8136489139e29bf26b327a09c6a14530e4c640b9a96b00883ee084bb825de5 \
-         sha256::1e225f31360ee8440ca24aeff20f3610a359701152614750fd8c88e13e5dcd88 \
-         sha256::ab0a0f4122904fdc075d242c754fd085bce84a640b664533f08b2dec72b34083 \
-         sha256::8a0f786560a5b17acac7962d5b73b3d8aad26fcb8bd1cf3a689e5d83b7300987"
+CHKSUMS="sha256::4f92cf0445dd1683dc56934bed3cfe322ae803d0c7e9c76b7049d774abb58abb \
+         sha256::98146eeef4b129397271d12fcf923097e560fd8c30759b80f612ffa2cbfadd41 \
+         sha256::04fd673a4c38eca98a81c467c318db3e07a5926fe4207b1b8c8695ca6cb86822 \
+         sha256::d4e93f6e1e1ed49105d346f4e01839d3f70a3b3bc1074171f92d1f89888173fb \
+         sha256::46cd3e47e8c31adf90ee835c94dbd42ee36b500b963f7a534750147fe0087b8f \
+         sha256::73c24eea54a9007920831f440aebf8e2841a2eb684e288a3b90b418fce822cd1 \
+         sha256::80fe056c7e77746581a64076b314d9cd82676521af4a934b6ad758238cd4feb7"
+CHKUPDATE="anitya::id=227594"
 SUBDIR="."
-CHKUPDATE="github::repo=lxgw/LxgwWenKai"

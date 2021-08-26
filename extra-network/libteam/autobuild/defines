@@ -1,0 +1,5 @@
+PKGNAME=libteam
+PKGDES="Library for controlling team network device"
+PKGDEP="dbus jansson libdaemon libnl"
+BUILDDEP="swig doxygen"
+PKGSEC=net

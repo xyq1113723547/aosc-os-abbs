@@ -3,3 +3,4 @@ SRCS="git::commit=3437a8bad8a4f217e84d6e583b59a4a7f16e5a72::https://sourceware.o
 SRCS__LOONGARCH64="tbl::https://repo.aosc.io/aosc-repacks/binutils-2.31.1.tar.gz"
 CHKSUMS="SKIP"
 CHKSUMS__LOONGARCH64="sha256::e9212f93828ea6edd6d5e487b222201b192b0ce953f4c0eac7d750537210ce76"
+CHKUPDATE="anitya::id=7981"

@@ -1,6 +1,4 @@
-VER=0.20.2
-
+VER=0.20.4
 SRCS="tbl::https://github.com/greshake/i3status-rust/archive/v$VER.tar.gz"
-CHKSUMS="sha256::8e4a90813d66cf02a51d2d266524fb7b848dc35253b80508c89e49657bd1a83f"
-
-CHKUPDATE="github::repo=greshake/i3status-rust"
+CHKSUMS="sha256::613d5ec876c0be8371b1037ddbf777b904bd84f57334b532454e4c430bdbd48f"
+CHKUPDATE="anitya::id=231979"

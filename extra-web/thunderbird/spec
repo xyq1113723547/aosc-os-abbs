@@ -1,4 +1,4 @@
-VER=78.11.0
+VER=91.0.2
 CHKUPDATE="anitya::id=4967"
 SRCS="https://archive.mozilla.org/pub/thunderbird/releases/$VER/source/thunderbird-$VER.source.tar.xz \
       file::rename=af.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/af.xpi \
@@ -22,7 +22,6 @@ SRCS="https://archive.mozilla.org/pub/thunderbird/releases/$VER/source/thunderbi
       file::rename=es-ES.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/es-ES.xpi \
       file::rename=et.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/et.xpi \
       file::rename=eu.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/eu.xpi \
-      file::rename=fa.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/fa.xpi \
       file::rename=fi.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/fi.xpi \
       file::rename=fr.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/fr.xpi \
       file::rename=fy-NL.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/fy-NL.xpi \
@@ -43,6 +42,7 @@ SRCS="https://archive.mozilla.org/pub/thunderbird/releases/$VER/source/thunderbi
       file::rename=kk.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/kk.xpi \
       file::rename=ko.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/ko.xpi \
       file::rename=lt.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/lt.xpi \
+      file::rename=lv.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/lv.xpi \
       file::rename=ms.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/ms.xpi \
       file::rename=nb-NO.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/nb-NO.xpi \
       file::rename=nl.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/nl.xpi \
@@ -54,7 +54,6 @@ SRCS="https://archive.mozilla.org/pub/thunderbird/releases/$VER/source/thunderbi
       file::rename=rm.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/rm.xpi \
       file::rename=ro.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/ro.xpi \
       file::rename=ru.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/ru.xpi \
-      file::rename=si.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/si.xpi \
       file::rename=sk.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/sk.xpi \
       file::rename=sl.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/sl.xpi \
       file::rename=sq.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/sq.xpi \
@@ -67,70 +66,69 @@ SRCS="https://archive.mozilla.org/pub/thunderbird/releases/$VER/source/thunderbi
       file::rename=vi.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/vi.xpi \
       file::rename=zh-CN.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/zh-CN.xpi \
       file::rename=zh-TW.xpi::http://ftp.mozilla.org/pub/thunderbird/releases/$VER/linux-x86_64/xpi/zh-TW.xpi"
-CHKSUMS="sha256::cb5475dd6494c68699aa29f97be2868a455548cabb4c4859e109b1badae7c0fb \
-         sha256::05c7cba9a65f8ac166daa8b7220b4c412194845dbfe9b70c505b56b5857afbbe \
-         sha256::a97c62bc80c262259194c314cf93abe58932d842b24b9c94a28f3ffc367eac54 \
-         sha256::660b5d0e026ee9590f94a3c21e9c7e4f5b824e3709686cdcfd189cd79c07e744 \
-         sha256::c46fe33fd98b74fee997f45ea6614e89b88c0e9dc299e7dd87977eeaacc96e0c \
-         sha256::5f808ba5aef1fdfb8f7d64761d9bf7739ea526dbdc69a246e132a02a36631298 \
-         sha256::4611a19d7779891c5fd739ebfdf908216c695b92d6372a30d2fe54ade4a76ae1 \
-         sha256::787be23b354f923ae52c91e23ad558dd76149366f00a338833b2275bb672e45e \
-         sha256::749182b3e0ea45f9f461331b440a436c095ff46feb91976adef3653c33929f11 \
-         sha256::142392fa544e31ec46b92a4ec6ab17cc41620276ad024e5e7b2c739a6bdf09b3 \
-         sha256::d2c7573fceb32f05abdd183bd5f098adf717ec6ba08cb729ec8f56538dca3957 \
-         sha256::c05ee4bd2d564f03f7c78b008c7e125ec385083aaa90b83fe65057e88cd01d6f \
-         sha256::4a72e78e7afa314e0ae08aca50c831c88870ad6c206620b7902cfa2deaa47e4b \
-         sha256::c7b5307c20fa2c13c81eb6e0b8f8da2be308f81094b57d369ae726ce385c38ed \
-         sha256::0f2082d74c8b7cab92e1bb7b5516f2ecacdd89dbfde4eaad67395a77058c4b83 \
-         sha256::c85b1e50cae802652a248ce1d984a83b88060d8dab9322fa14427a998408a26c \
-         sha256::d295b68ba390a248d916e3f63fc8f20fdc13bf34a8286525e887644fac8e3a88 \
-         sha256::b7738b3d83f460442f16c03cac6f758524827ed39ec892563e2b054543d37eeb \
-         sha256::841a8e279d7a4863a1f7c516fbc8026f70151366aa63cde8231e5bcc7b11346f \
-         sha256::df0fed6ca75bc93cd947b27b10f06b2952490de49124f010302e25a95a2239f6 \
-         sha256::4db4abab44c74c0d9aa4406db464510c07be52bd9ec477ddfd80e8cb934d0d7e \
-         sha256::5aa4ea6583edf9980a76464961eb5a976fd809309a19a300100b47603956ecbb \
-         sha256::ddf62316b8e1fc0e07906be5bdfc334de453286846763b250069684daaa8235f \
-         sha256::a8543bf7253d93389aebdd765d50d3d06ba3ab8c9308f37d12022701467af04f \
-         sha256::325d5d4a152f1fe848c658857d6468a57194c00782d5cc0fe707cd209f5b84ee \
-         sha256::0917d3e865fc1911862ab50099b892a61be51392aa47f201b0c475453302564a \
-         sha256::34b0c1ba3049c2e5ddd7e9e6e9b33fdee2ab0ad7ac04853cb4f88ee8df7e5696 \
-         sha256::079109eef3bea74465138fca421e3e0f368a27bb1985931f7fe59cfb894848fe \
-         sha256::634a5ac246d110bb6fa8cd9d041926c82ac53c6acbd3ad711735081c28f86522 \
-         sha256::7ffaea7e44d83e520871ec716ce429baacc5abe4102a516b56d4609808579407 \
-         sha256::66489b3edacf654c4c55ab5911053430d554fd995012cebe10018907a26731a0 \
-         sha256::d49f859f8703bd0c18258aa946f5def934af987cbb98425c9d2abfd7467a7e6b \
-         sha256::fdb5d8b5ce92d71f31866b61750d10941eeba5aa22fecdba54af02b2f026286a \
-         sha256::f462373d651f2a6ec79efc805c957a71e4a54002293c7180d714d59921f269ce \
-         sha256::81338e9f3426b3990b60a04094d4e39c40a8675c6e7b5b838e82bca3a7b8da99 \
-         sha256::4563c78c2956aa1bfb2d7077bd31de8ac43217e02ab64986325769557b4cac9d \
-         sha256::8a1b7b5ffba9c57c7bbce1950f0fae833566d224d84354c9e34480b5ba487a61 \
-         sha256::89ea15ca22b5d458a24e7dad709935c94a35f1c7341f4e4a3416ddde93288b27 \
-         sha256::e4e80133a64aba849da6cc5f9a7575ca1893939b1c225f8e3507e627187ba95b \
-         sha256::fd1d8ff12e3735743399612e49522793118ab4658d91eb2a45a4a4143d4cf608 \
-         sha256::0804d13767e74d9a7e10da6dbccd46847737f849060c93c21e1722ed737a901f \
-         sha256::b9e87afd872d5a16f558528619711b321c7059b823ce0ff27d6d60405b65a8d5 \
-         sha256::154bcf3dd0f9bd81ea1cf7f963bb78edb429db88b82f5e52fafeab06b47d273f \
-         sha256::f879b33158b1f08e74dbb0f70f2d6aaf0315a3398418b3b8eb28ab73b1c3bfc7 \
-         sha256::17c84ad263e2bfa10e41732550d680a258a1345b2d554dd5fd4d27abb70e77c1 \
-         sha256::785a4d894a832972b75a1af46e3f2402d06d1031109deb1b8e1df53bba174a5f \
-         sha256::0c5e7d976cd30bc62a8a684018ac1e06bd7446b73a7dc4e2cff5f0b162c05e52 \
-         sha256::50fcb77af4d601935980d813419151b1ee8cfd009e4edcbdca1ddaf81894bada \
-         sha256::83ea6806152a6e0497bd2adb3d1d4f9c2d5f4c4bbce5d700f0edd83773ec9d08 \
-         sha256::de4813ad9766e771640a86f17a6c06f97806f8e5bbc2034cf0f78cda97384d47 \
-         sha256::7c3c52c836c48ae8b4fa4887ae1caa238aad7446a7781ea45db480fa20b9c85c \
-         sha256::4021f56ecfeb15053664761f5ff9e303c24af94b7982ddab7ad7c1b0eedd8423 \
-         sha256::ca7aa785f6e63673c818fe9c6064259257dc218e4cef490608e3ef5b380899ae \
-         sha256::399138aeddf59997704b2f04800b901de76e67e329040d211829d2d65bfb24e2 \
-         sha256::fa4fad12007bb9a63089d709bae667623e60ea11defaacb8e695f4825bc8bdd9 \
-         sha256::03ff455af06d46b0955526c0afab91af2b5cccccf1d3dcc03490e229608bb264 \
-         sha256::7c217100a2cdf3303f3d51b4a11a4e7a3f48bc7a02e172de8cd67766ea716e62 \
-         sha256::ef9a4f4b1782a1546bce02e24a268dfef2a81d2c9d9841d141bd6a19479dac41 \
-         sha256::c85fe8a7d3d63e75778dd296429081e7177639c90411ec323c293eb38a3ac9e1 \
-         sha256::1ec88c389fa09dcc2a0f3bac443359fbfc8c89f0315e275822bf99b21d1bfc1f \
-         sha256::881b0df08b81cebd7f4b57943a11535d1c5c094779a13a4834fd169b249ff589 \
-         sha256::88d2036282b909fbb5e99d48668337b01b3609395b8c824713a1e50e18b32458 \
-         sha256::e1d1bf509045de43772b0c7d58c76931d0fc85448681b5be71e6b503beb8a0c3 \
-         sha256::762773e7cf7cd4106bcd85395edcdcd684d0e49a9c39197cfc217a3b068a74ba \
-         sha256::63d9b7bfad6a8c13f6838cd52334c120642890f80918317c592ba709268175d1 \
-         sha256::b429406c2358c2a44e5f3d53a2905b9dd529030d050648438c85c5ebdc0b4bc4 \
-         sha256::967f217d36182fb02a5592933ed63087edbc76c6d713f0dd660ae96710564926"
+CHKSUMS="sha256::96d095edf1c5c2282b0d8a0b1a0620f5e3ce7ef9e6d8225cf06ced84b7e8612c \
+         sha256::debb05e5f8c762efa280ede0a911fc125e81bf3b430cc8222d17fd4924a5070b \
+         sha256::07a078bed08e5bb5d316edb8317717c97af596f68d68aa366d7e16035ecd2998 \
+         sha256::d87939ec4ffc042c08958b9c33219dce5f3706c9eca4c8c8f24bac94a1d5169b \
+         sha256::55d32500639a4ca9308fd57320194303be57157c038938180b530a698b305220 \
+         sha256::28be434dedf7db4b156afabef369af2f71cdcf8a9a0f829a6d5aac0f731caed6 \
+         sha256::dc19b82f2fb59d907fc801909b03b1b2255996206dfb3e3ea7b136857f371f51 \
+         sha256::3f1424fed56210101063472ddfe1f69c8d6051acd61acfaf4f2eb49d61dcaad6 \
+         sha256::b084dec02525eed684186321937cdd67de423f13ca7d15a0278422e169e13d29 \
+         sha256::c055776d9abc0568b27e3597f16b27caed8ddb578d009420ee70133577bfb929 \
+         sha256::576aba006e9a3196858bffdc5066812e181ba3fd14708a4dd1c7987359d720cb \
+         sha256::feb13d99fef231a6588de25923dfdb31587fdeb7bd964752df48bf7f06469a09 \
+         sha256::fdf228450cfd13b6ecc6944b53618cb69ea5c70178a8418e9ffc71d8d4a6e67c \
+         sha256::aa90a0ae46f9bbb17f91627dc704f781fff2b4ada0d6079bdc0d4595e167a12f \
+         sha256::a2ba68ab5f9f54a146df0a22b1f41cffec7b6d5ce6f147d5fc90411836ab491e \
+         sha256::e3989b98f7a99b9645f7c1022a064482649e8a0d222f93804c521c3bbb836f38 \
+         sha256::d20034d4ed69cf49c371ac325cdd842a76f56504c897ea282ece71adab5c324b \
+         sha256::95e9a2076596149085ee6631e208f9c311485c604c722a89d6cadb95f5d13bbe \
+         sha256::4ab9dd39d159f21b0dc58821f24ed98a89fa1354b0098d0f23248ca1eb1b254a \
+         sha256::3da18855e10ba8882102fcff5b826407ac56c5de10e025d05ee3722c277b220a \
+         sha256::4532e4b638b65be0c93e0d32d5d29d224f570ae06a62fec6e174cbf47bfb1176 \
+         sha256::953e26847acb558eec43534de1a3e7faf7d541248e1bb4032e4a343c49fc6d7c \
+         sha256::8154f4fa036958da49776a86cbce992545b9bcd5d5d0d8f905aff8c977855f18 \
+         sha256::51ac9bb403428517303cd9a39388265861cf6f490ff83163f7fd4e57395bf298 \
+         sha256::66ca48ab242e6dac07b082bd2ecc1666e60827af879e55be4d696ded6d12818a \
+         sha256::1e7ed826f7fbd24960c6fe95a2609fc85f4c545981fe7026608921b57eca6b89 \
+         sha256::0c2351836d81ec21c14746fb48fca5d6a39b9548ef597e8f5b83ff57d4810ed4 \
+         sha256::4cda1a05e5d79d98239711b07a66cd36ed8d59bb21e89ffa96ceef8b1ad1d5e1 \
+         sha256::2b7225c3b48199d595ea15e0c1e291f315c4f8c3d6dd09a8b3983840c7e3e504 \
+         sha256::3462981db11958e49ecc5804f1f7c5b5eb7b96eb1e9c4592ed788d46384de732 \
+         sha256::ed63e51407b25b0c5b8d598f82ed9903dd8f8f2caa1afe5650b2ec85878fa1af \
+         sha256::9d28e027ebd13fd35ff345f0a7ed2e80b6bf04ffac3ef1c52e23c0516c43f794 \
+         sha256::cca28004f79838f65fbc4ce8405da3d89605d0d0ebd16db853eacc3dcd0341e9 \
+         sha256::08fd2275039078aeaebcc1e4a7a2576bec9fdd5c1ebb3da0383508ae1e775cca \
+         sha256::195c6904ad13d9afcb41c178392746d8d184b5ea8f7768ef20d74451735bdc38 \
+         sha256::0b01250359a27098c615949a06d22c00fa95a2d034d87b31da68e010bb448085 \
+         sha256::ee56f4bcd9c64db77b39e4f37ca74e58687b5744878b6f837e964969cbfaa92e \
+         sha256::1f6dde3a876dba6a53d69e78d7c780fc6d8f58e958e2827fe6a81ab10ea1c0c2 \
+         sha256::527b71e954794e54a0bf35e7405ce24f4d3a226834bc96dcfe1f97ac6c87051d \
+         sha256::3d28562d289c86f02a1a1e3e559b0711ab0dba487958b3cefa483b5507342df4 \
+         sha256::c40fc2ff9bdfe32a8cadc9ce3894ccc84ae4b8a4cfb78a18f0e59ec169e12196 \
+         sha256::c2f9a6ad32ec8b42bcc9ade839250243512ae67543c3a4f0c6c9a07e2a5c7ecb \
+         sha256::ae874d11983fac9ebeeb118b97fbf8c8399be22fb8e5d7965c01e48fd58bd57e \
+         sha256::c895f6fd7c49d6aacb3963c8aefa78f53d1ec5af0f352b60298eb73e6f89e623 \
+         sha256::00592c16ac618b08f5a963196a3f8e29c91ff6ab8bba80fb8c677d774fb63a74 \
+         sha256::301d6615b1b0ecad6560644190c3bd1e07d75f9e37a79e3c53fee34c8e3adab9 \
+         sha256::6092a6bae57240a9bd45be77a714a4079a10b7a01d39ad90a16ed54a17c46b25 \
+         sha256::22e07cce951564e32ba9f91f3291664c3917245f18a7255feed2a841af2a0dcf \
+         sha256::8b35807a51e40e2fed4d72ec581302af99f9ff8e61b3cfc20532e05c68cbf7dd \
+         sha256::53893a64ec8a0f4e331dfdd0ff339b28399177a43912bf67cf81fce98da37294 \
+         sha256::27383c70e897e4e1d0ef108c2e9f35f9a8bfa47948241d98f5294ac1b5680edd \
+         sha256::1f619976c975b6ea467fabbfcf9884b1357fb3835efbf33440266c3fca2345ff \
+         sha256::5c7137c1817e7d7e77eaf30041723e57c1f204f84b9718639ece8a601d464788 \
+         sha256::192f6f956d7984f27ca9669915d09c87e035dd6267abcebf46a13f283422443f \
+         sha256::b928ba8d060828d1071b485a204e507f693bd44954aa0e08b55fa49472f5e016 \
+         sha256::ecf508fc36c7fbb24c10db1e70ab050e9f4ad39a36247969b4d777664f904bfd \
+         sha256::9429a8f67287ab17925219170bf32403b9c411bed522739e5bd4e68b5c67c45e \
+         sha256::e0b82df400d4103e6220ff7472b63abe244600567d9a0de0faf2eb9ec5cf47f8 \
+         sha256::97312fb19d2146a8ba1196326382075c9262df1c4ea46fded341dd79137549d5 \
+         sha256::8d929aa165c447f741cd771946b38812b33c1a01d9cdd8e30a5d90687f9bcef0 \
+         sha256::a0aabf6f1f319a1fe5d651356b576bb1acf38a1efbc2fde13286000f1c0187f7 \
+         sha256::a48e56aa39e32ca941daec077e17972a0b61150f3af9cd325184daa46819ceeb \
+         sha256::2e3304a1baa3353f3ab5d15eab5bb4174a6a2570c6a58b3cbc32f4a1b91b78e4 \
+         sha256::d8c7f9b0aca6aa7fbbcf34e0f9d0ad1228730586441b19cf963ed944b62c6962 \
+         sha256::2326b1f4cb671924dd8a60b29847413cb25cc9d6e2af34bb3d6996a23855ab6b \
+         sha256::003d848417b1a930d2e89c72948a282e3e404a76aff29122200caa16be94fa81"

@@ -1,0 +1,4 @@
+PKGNAME=redsocks2
+PKGSEC=net
+PKGDES="A transparent TCP-to-proxy redirector"
+PKGDEP="libevent glibc"

@@ -1,5 +1,4 @@
-VER=0.13.0
-REL=2
+VER=0.14.1
 SRCS="tbl::https://github.com/getzola/zola/archive/v$VER.tar.gz"
-CHKSUMS="sha256::84c20cf5c851a465266c5cc343623752102c53929f6da31b2a4ce747a87c5c23"
+CHKSUMS="sha256::28e50071009a1430c5f8df94e2585d095f85f906f04101fe35ee9ed53c353cc4"
 CHKUPDATE="anitya::id=20639"

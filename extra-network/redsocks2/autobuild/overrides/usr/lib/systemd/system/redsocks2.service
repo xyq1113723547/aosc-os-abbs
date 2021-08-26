@@ -1,0 +1,9 @@
+[Unit]
+Description=Transparent redirector of any TCP connection to proxy using your firewall
+
+[Service]
+ExecStartPre=/usr/bin/redsocks2 -t -c /etc/redsocks2.conf
+ExecStart=/usr/bin/redsocks2 -c /etc/redsocks2.conf
+
+[Install]
+WantedBy=multi-user.target
