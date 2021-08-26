@@ -3,5 +3,5 @@ PKGSEC=libs
 PKGDES="A modern formatting library for C++"
 BUILDDEP="cmake ninja"
 
-PKGBREAK="kodi<=18.9"
-NOLTO=1
+PKGBREAK="bear<=3.0.13 ceph<=1:15.2.8 kodi<=1:19.1 \
+          pingus<=1:0.7.6+git20201009 spdlog<=1.8.2 yuzu<=1:0+665"
