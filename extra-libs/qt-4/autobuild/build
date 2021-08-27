@@ -17,11 +17,11 @@
             -system-sqlite \
             -plugin-sql-sqlite \
 	    ${MYSQL} \
-            -plugin-sql-psql \
             -plugin-sql-odbc \
             -no-phonon \
             -no-phonon-backend \
             -no-openvg \
+            -no-webkit \
             -nomake demos \
             -nomake examples \
             -nomake docs \

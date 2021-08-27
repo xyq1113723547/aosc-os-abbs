@@ -1,5 +1,9 @@
 export LD_PRELOAD="${SRCDIR}/cmake/libprotoc.so.${PKGVER}.0:${SRCDIR}/cmake/libprotobuf.so.${PKGVER}.0"
 export PATH="${SRCDIR}/cmake:${PATH}"
+abinfo "change execution bit for so"
+chmod -v +x $PKGDIR/usr/lib/libprotobuf-lite.so.3.15.6.0
+chmod -v +x $PKGDIR/usr/lib/libprotobuf.so.3.15.6.0
+chmod -v +x $PKGDIR/usr/lib/libprotoc.so.3.15.6.0
 
 pushd python
     python2 setup.py install --prefix=/usr --root "$PKGDIR"
