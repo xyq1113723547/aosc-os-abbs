@@ -1,3 +1,5 @@
+abinfo "copy config files"
+cp /sources/config.* ./build
 abinfo "Configuring httpd ..."
 ./configure --prefix=/usr \
             --enable-layout=AOSC \

@@ -1,0 +1,4 @@
+abinfo "change execution bit for so"
+chmod -v +x $PKGDIR/usr/lib/libsoxr-lsr.so.0.1.9
+chmod -v +x $PKGDIR/usr/lib/libsoxr.so.0.1.2
+

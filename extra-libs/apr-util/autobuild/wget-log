@@ -1,0 +1,31 @@
+--2021-08-27 15:17:20--  https://ftp.jaist.ac.jp/pub/apache/apr/apr-1.6.5.tar.gz
+Resolving ftp.jaist.ac.jp (ftp.jaist.ac.jp)... 2001:df0:2ed:feed::feed, 150.65.7.130
+Connecting to ftp.jaist.ac.jp (ftp.jaist.ac.jp)|2001:df0:2ed:feed::feed|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 1073556 (1.0M) [application/x-gzip]
+Saving to: '/var/cache/acbs/tarballs/cebb3e99abf82c8425301d774f581d181a3390fd5f6945d807435cb41d156fe8'
+
+     /var/cache/acb   9%[>                ] 104.00K   269 B/s    eta 60m 0s /var/cache/acbs/tar  10%[>                ] 112.00K   289 B/s    in 6m 36s  
+
+2021-08-27 15:39:02 (289 B/s) - Read error at byte 114688/1073556 (Success). Retrying.
+
+--2021-08-27 15:39:03--  (try: 2)  https://ftp.jaist.ac.jp/pub/apache/apr/apr-1.6.5.tar.gz
+Connecting to ftp.jaist.ac.jp (ftp.jaist.ac.jp)|2001:df0:2ed:feed::feed|:443... connected.
+HTTP request sent, awaiting response... 206 Partial Content
+Length: 1073556 (1.0M), 958868 (936K) remaining [application/x-gzip]
+Saving to: '/var/cache/acbs/tarballs/cebb3e99abf82c8425301d774f581d181a3390fd5f6945d807435cb41d156fe8'
+
+        [ skipping 100K ]
+   100K ,,,,,,,,,, ,,........ .......... .......... .......... 14% 9.63K 2m3s
+   150K .......... .......... .......... .......... .......... 19% 93.0  89m18s
+   200K .......... .......... .......... .......... .......... 23% 56.8  2h20m
+   250K .......... .......... .......... .......... .......... 28%  284  1h48m
+   300K .......... .......... .......... .......... .......... 33% 85.2  1h49m
+   350K .......... .......... .......... .......... .......... 38%  841  86m18s
+   400K .......... .......... .......... .......... ........   42% 90.8 =47m21s
+
+2021-08-27 16:41:32 (121 B/s) - Read error at byte 458752/1073556 (Success). Retrying.
+
+--2021-08-27 16:41:34--  (try: 3)  https://ftp.jaist.ac.jp/pub/apache/apr/apr-1.6.5.tar.gz
+Connecting to ftp.jaist.ac.jp (ftp.jaist.ac.jp)|2001:df0:2ed:feed::feed|:443... connected.
+Unable to establish SSL connection.

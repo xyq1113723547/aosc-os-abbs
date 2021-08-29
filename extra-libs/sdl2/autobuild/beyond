@@ -1,0 +1,2 @@
+abinfo "change execution bit for so"
+chmod -v +x $PKGDIR/usr/lib/libSDL2-2.0.so.0.12.0

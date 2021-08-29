@@ -1,3 +1,6 @@
+abinfo "change execution bit for binary files"
+chmod -v +x $PKGDIR/usr/bin/envvars-std
+chmod -v +x $PKGDIR/usr/bin/envvars
 abinfo "Installing default configuration directories ..."
 mkdir -pv "$PKGDIR"/etc/httpd/conf.d \
           "$PKGDIR"/etc/httpd/conf.modules.d

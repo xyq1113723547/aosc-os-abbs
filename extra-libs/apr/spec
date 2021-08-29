@@ -1,5 +1,5 @@
 VER=1.6.5
 REL=2
-SRCS="tbl::https://ftp.jaist.ac.jp/pub/apache/apr/apr-$VER.tar.gz"
-CHKSUMS="sha256::70dcf9102066a2ff2ffc47e93c289c8e54c95d8dda23b503f9e61bb0cbd2d105"
+SRCS="tbl::http://0.0.0.0:8000/apr-$VER.tar.bz2"
+CHKSUMS="sha256::a67ca9fcf9c4ff59bce7f428a323c8b5e18667fdea7b0ebad47d194371b0a105"
 CHKUPDATE="anitya::id=95"

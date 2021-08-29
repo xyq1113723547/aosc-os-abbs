@@ -1,6 +1,6 @@
 PKGNAME=rtkit
 PKGSEC=admin
-PKGDEP="dbus polkit systemd"
+PKGDEP="dbus systemd"
 PKGDES="Realtime policy and watchdog daemon"
 
 AUTOTOOLS_AFTER="--with-systemdsystemunitdir=/usr/lib/systemd/system"

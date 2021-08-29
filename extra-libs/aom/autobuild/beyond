@@ -1,0 +1,2 @@
+abinfo "change executions bit for so"
+chmod -v +x $PKGDIR/usr/lib/libaom.so.2.0.0

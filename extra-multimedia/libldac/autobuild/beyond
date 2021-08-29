@@ -1,0 +1,3 @@
+abinfo "change execution bit for so"
+chmod -v +x $PKGDIR/usr/lib/libldacBT_abr.so.2.0.2.3
+chmod -v +x $PKGDIR/usr/lib/libldacBT_enc.so.2.0.2.3

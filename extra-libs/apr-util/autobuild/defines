@@ -1,7 +1,7 @@
 PKGNAME=apr-util
 PKGDES="The Apache Portable Runtime utilities"
 PKGSEC=utils
-PKGDEP="apr expat gdbm openldap unixodbc postgresql db sqlite nss \
+PKGDEP="apr expat gdbm openldap unixodbc db sqlite \
         openssl mariadb"
 
 AUTOTOOLS_AFTER="--with-apr=/usr \
@@ -9,10 +9,8 @@ AUTOTOOLS_AFTER="--with-apr=/usr \
                  --with-crypto \
                  --with-gdbm=/usr \
                  --with-sqlite3=/usr \
-                 --with-nss=/usr \
                  --with-odbc=/usr \
                  --with-berkeley-db=/usr \
-                 --with-pgsql=/usr \
                  --with-oracle=/usr \
                  --with-openssl=/usr \
                  --with-mysql=/usr"

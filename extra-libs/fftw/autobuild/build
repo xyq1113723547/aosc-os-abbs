@@ -1,5 +1,6 @@
 cd "$SRCDIR"/fftw-${PKGVER/+/-}
-CONFIGURE="./configure F77=gfortran --prefix=/usr \
+cp /sources/config* .
+CONFIGURE="./configure --prefix=/usr \
            --enable-shared --enable-threads \
            --enable-openmp"
 
@@ -13,11 +14,13 @@ fi
 
 if [[ "${CROSS:-$ARCH}" = "amd64" ]]; then
     cd "$SRCDIR"/fftw-${PKGVER/+/-}-double
+    cp /sources/config* .
     $CONFIGURE $CONF
     make
     make install DESTDIR="$PKGDIR"
 
     cd "$SRCDIR"/fftw-${PKGVER/+/-}-long-double
+    cp /sources/config* .
     $CONFIGURE --enable-long-double \
                $CONF
     make
@@ -25,6 +28,7 @@ if [[ "${CROSS:-$ARCH}" = "amd64" ]]; then
 fi
 
 cd "$SRCDIR"/fftw-${PKGVER/+/-}-single
+cp /sources/config* .
 $CONFIGURE --enable-float \
            $CONF
 make
@@ -32,6 +36,7 @@ make install DESTDIR="$PKGDIR"
 
 if [[ "${CROSS:-$ARCH}" != "amd64" ]]; then
     cd "$SRCDIR"/fftw-${PKGVER/+/-}-std
+    cp /sources/config* .
     $CONFIGURE
     make
     make install DESTDIR="$PKGDIR"

@@ -4,6 +4,7 @@ fi
 
 export ABTP="`pwd`" &&
 cd build/generic &&
+cp /sources/config.* .
 ./configure --prefix=/usr ${AUTOTOOLS_AFTER} &&
 make $ABMK &&
 make DESTDIR=$ABTP/abdist install &&

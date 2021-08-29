@@ -1,0 +1,5 @@
+abinfo "build celt ..."
+cp /sources/config.* .
+./configure --prefix=/usr --enable-custom-modes --disable-static
+make
+make install DESTDIR="$PKGDIR"
