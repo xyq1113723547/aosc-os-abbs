@@ -1,0 +1,7 @@
+PKGNAME=aosc-findupdate
+PKGSEC=utils
+PKGDES="AOSC package source updater"
+PKGDEP="glibc openssl"
+BUILDDEP="rustc llvm"
+
+USECLANG=1

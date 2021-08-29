@@ -11,6 +11,7 @@ extra-kde/konsole
 extra-kde/dolphin
 extra-kde/kpmcore
 extra-kde/libkipi
+extra-kde/kipi-plugins
 extra-kde/libksane
 extra-kde/analitza
 extra-kde/libkeduvocdocument
@@ -137,6 +138,7 @@ extra-kde/kcolorchooser
 extra-kde/kolourpaint
 extra-kde/kruler
 extra-kde/okular
+extra-kde/skanlite
 extra-kde/spectacle
 extra-kde/svgpart
 extra-kde/audiocd-kio
@@ -211,6 +213,7 @@ extra-kde/kwalletmanager
 extra-kde/markdownpart
 extra-kde/print-manager
 extra-kde/sweeper
+extra-kde/yakuake
 extra-kde/kimagemapeditor
 extra-kde/kamoso
 extra-kde/kopete

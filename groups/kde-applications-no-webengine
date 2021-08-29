@@ -9,6 +9,7 @@ extra-kde/keditbookmarks
 extra-kde/konsole
 extra-kde/dolphin
 extra-kde/libkipi
+extra-kde/kipi-plugins
 extra-kde/libksane
 extra-kde/analitza
 extra-kde/libkeduvocdocument
@@ -65,7 +66,6 @@ extra-kde/kfind
 extra-kde/konqueror
 extra-kde/artikulate
 extra-kde/blinken
-extra-kde/cantor
 extra-kde/kalgebra
 extra-kde/kalzium
 extra-kde/kanagram
@@ -129,6 +129,7 @@ extra-kde/kcolorchooser
 extra-kde/kolourpaint
 extra-kde/kruler
 extra-kde/okular
+extra-kde/skanlite
 extra-kde/spectacle
 extra-kde/svgpart
 extra-kde/audiocd-kio
@@ -186,6 +187,7 @@ extra-kde/ktimer
 extra-kde/kwalletmanager
 extra-kde/print-manager
 extra-kde/sweeper
+extra-kde/yakuake
 extra-kde/kamoso
 extra-kde/kopete
 extra-kde/elisa
