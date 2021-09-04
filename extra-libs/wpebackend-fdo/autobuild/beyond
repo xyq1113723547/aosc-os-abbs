@@ -1,0 +1,1 @@
+chmod -v +x $PKGDIR/usr/lib/*.so.*

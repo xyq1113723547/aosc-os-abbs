@@ -1,0 +1,2 @@
+abinfo "change execution bit for so"
+chmod -v +x $PKGDIR/usr/lib/libyajl.so.2.1.0

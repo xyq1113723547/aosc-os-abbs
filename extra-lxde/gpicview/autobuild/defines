@@ -1,6 +1,6 @@
 PKGNAME=gpicview
 PKGSEC=LXDE
-PKGDEP="desktop-file-utils gtk-2 librsvg xdg-utils"
+PKGDEP="desktop-file-utils gtk-2 xdg-utils"
 BUILDDEP="intltool"
 PKGDES="Lightweight image viewer (a LXDE project)"
 

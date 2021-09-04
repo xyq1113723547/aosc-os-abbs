@@ -1,0 +1,16 @@
+abinfo "Arch Linux: Installing libcaca"
+  ./configure \
+    --prefix=/usr \
+    --libexecdir=/usr/lib \
+    --mandir=/usr/share/man \
+    --enable-shared \
+    --disable-csharp \
+    --disable-cxx \
+    --disable-doc \
+    --disable-gl \
+    --disable-python \
+    --disable-slang \
+    --disable-static
+make
+make DESTDIR="$PKGDIR" install
+

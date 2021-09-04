@@ -5,6 +5,7 @@ PKGDEP="xkeyboard-config x11-app x11-lib libdrm pixman mesa libgcrypt \
         xcb-util-keysyms xcb-util-wm x11-app x11-font libunwind"
 PKGDEP__ARMEL="${PKGDEP/libunwind/}"
 PKGDEP__ARMHF="${PKGDEP/libunwind/}"
+PKGDEP__LOONGARCH64="${PKGDEP/libunwind/}"
 BUILDDEP="wayland"
 PKGDES="X.Org display server"
 
@@ -35,7 +36,7 @@ AUTOTOOLS_AFTER="--enable-ipv6 \
                  --disable-silent-rules"
 
 # FIXME: causes segfault on arm.
-if [[ "${CROSS:-$ARCH}" != "armel" && "${CROSS:-$ARCH}" != "armhf" ]]; then
+if [[ "${CROSS:-$ARCH}" != "armel" && "${CROSS:-$ARCH}" != "armhf" && "${CROSS:-$ARCH}" != "loongarch64" ]]; then
     PKGDEP+=" libunwind"
     AUTOTOOLS_AFTER+=" --enable-libunwind"
 else

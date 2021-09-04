@@ -3,7 +3,7 @@ PKGSEC=utils
 PKGDES="Utilities for Video4Linux and DVB devices"
 PKGDEP="alsa-lib gcc-runtime libjpeg-turbo sysfsutils sdl2-image"
 PKGSUG="qt-5"
-BUILDDEP="doxygen qt-5"
+BUILDDEP="doxygen "
 
 NOPARALLEL=1
 AUTOTOOLS_AFTER="--enable-libdvbv5 \

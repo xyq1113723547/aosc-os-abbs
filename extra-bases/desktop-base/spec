@@ -2,5 +2,5 @@ _VER=6.0.0
 _DATE=20190706
 REL=1
 VER=${_VER}+${_DATE}
-SRCS="tbl::https://github.com/AOSC-Dev/aosc-os-artworks/archive/v${_DATE}.tar.gz"
-CHKSUMS="sha256::3daa54bbe12ba6046c70d11c361ec3c75d3f4a84bf762a3361649463f35e72fb"
+SRCS="tbl::http://0.0.0.0:8000/desktop-base-6.0.0+20190706.tar.gz"
+CHKSUMS="sha256::5fa69fbaf767ba1edc0a19d9e6ae1ffbfd21f8b743bbe990cb5cffe08d041574"

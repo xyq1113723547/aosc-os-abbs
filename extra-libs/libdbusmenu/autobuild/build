@@ -1,3 +1,4 @@
+cp /sources/config.* .
 mkdir build-gtk{2,3}
 cd build-gtk2
 ../configure ${AUTOTOOLS_DEF} ${AUTOTOOLS_AFTER} \

@@ -13,6 +13,7 @@ MESON_AFTER="-Da11y=true \
              -Dgtk3=true \
              -Dgtk4=false \
              -D_systemd=true \
+             -Dicu=false \
              -Dvapi=true"
 
 PKGBREAK="vte-gtk3<=0.62.1"

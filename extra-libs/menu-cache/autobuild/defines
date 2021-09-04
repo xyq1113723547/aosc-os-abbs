@@ -1,6 +1,6 @@
 PKGNAME=menu-cache
 PKGSEC=x11
-PKGDEP="libfm"
+PKGDEP=""
 BUILDDEP="gtk-doc"
 PKGDES="Caching mechanism for freedesktop.org compliant menus"
 

@@ -1,6 +1,6 @@
 PKGNAME=pcmanfm
 PKGSEC=LXDE
-PKGDEP="desktop-file-utils gtk-3 gvfs libfm lxmenu-data udisks menu-cache"
+PKGDEP="desktop-file-utils gtk-3 libfm lxmenu-data udisks menu-cache"
 BUILDDEP="intltool"
 PKGDES="Lightweight X11 file manager"
 

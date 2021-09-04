@@ -1,7 +1,7 @@
 PKGNAME=imagemagick
 PKGSEC=utils
-PKGDEP="libtool lcms2 fontconfig ghostscript openexr libwmf librsvg libxml2 \
-        liblqr openjpeg perl libxml2 libwebp djvulibre fftw libcl"
+PKGDEP="libtool lcms2 fontconfig ghostscript libwmf libxml2 \
+        liblqr openjpeg perl libxml2 libwebp djvulibre fftw "
 BUILDDEP="opencl-registry-api"
 PKGDES="An image viewing and manipulation program"
 

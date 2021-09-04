@@ -1,7 +1,7 @@
 PKGNAME=gdm
 PKGSEC=gnome
-PKGDEP="accountsservice dconf desktop-base libcanberra linux-pam nss upower \
-        gnome-session wayland fprintd plymouth orca"
+PKGDEP="accountsservice dconf desktop-base libcanberra linux-pam upower \
+        gnome-session wayland plymouth "
 BUILDDEP="gobject-introspection gtk-doc intltool itstool yelp-tools"
 PKGDES="GNOME Display Manager"
 

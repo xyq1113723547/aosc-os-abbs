@@ -1,6 +1,6 @@
 PKGNAME=libfprint
 PKGSEC=libs
-PKGDEP="libgusb nss gdk-pixbuf"
+PKGDEP="libgusb gdk-pixbuf"
 BUILDDEP="gobject-introspection gtk-doc"
 PKGDES="Library for fingerprint readers"
 

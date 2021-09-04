@@ -1,0 +1,2 @@
+abinfo "change /usr/doc to /usr/share/doc"
+mv $PKGDIR/usr/doc $PKGDIR/usr/share/doc

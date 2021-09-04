@@ -1,10 +1,10 @@
 PKGNAME=poppler
 PKGSEC=libs
 PKGDES="A PDF rendering library and command line tools used to manipulate PDF files"
-PKGDEP="cairo curl fontconfig gcc-runtime lcms2 libjpeg-turbo nss openjpeg \
+PKGDEP="cairo curl fontconfig gcc-runtime lcms2 libjpeg-turbo openjpeg \
         poppler-data"
 BUILDDEP="vim gtk-doc gtk-3 poppler-data gobject-introspection \
-          nss icu qt-4 qt-5"
+          "
 
 CMAKE_AFTER="-DENABLE_XPDF_HEADERS=ON \
              -DENABLE_UNSTABLE_API_ABI_HEADERS=ON \
